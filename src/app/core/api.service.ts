@@ -16,11 +16,6 @@ export class ApiService {
 
   /**
    * Example GET request
-   * The interceptors will:
-   * - Show loading indicator
-   * - Add auth token if available
-   * - Log the request/response
-   * - Handle any errors
    */
   getData(endpoint: string): Observable<any> {
     return this.http.get(`${this.apiUrl}/${endpoint}`);
